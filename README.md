@@ -1,4 +1,4 @@
-# [BDReborn](https://telegram.me/BDReborn)
+# [MASTER TEAM](https://telegram.me/MASTER_plus)
 
 **An advanced and powerful administration bot based on NEW TG-CLI
 
@@ -11,6 +11,10 @@
 |:--------|:------------|
 | [#!/]help | just send help in your group and get the commands |
 
+| Use (setlang ar) To use bot in Arabic >Or< To use bot in English send (setlang en) |
+|:--------|:------------|
+| [#!/]setlang [ar / en] |
+
 **You can use "#", "!", or "/" to begin all commands
 
 * * *
@@ -20,16 +24,16 @@
 ```sh
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/BeyondTeam/BDReborn.git
-cd BDReborn
-chmod +x beyond.sh
-./beyond.sh install
-./beyond.sh # Enter a phone number & confirmation code.
+git clone https://github.com/masterteam1/Master-plus.git
+cd Master-plus
+chmod +x master.sh
+./master.sh install
+./master.sh # Enter a phone number & confirmation code.
 ```
 ### One command
 To install everything in one command, use:
 ```sh
-cd $HOME && git clone https://github.com/BeyondTeam/BDReborn.git && cd BDReborn && chmod +x beyond.sh && ./beyond.sh install && ./beyond.sh
+cd $HOME && git clone https://github.com/masterteam1/Master-plus.git && cd Master-plus && chmod +x master.sh && ./master.sh install && ./beyond.sh
 ```
 
 * * *
@@ -39,44 +43,20 @@ cd $HOME && git clone https://github.com/BeyondTeam/BDReborn.git && cd BDReborn 
 Open ./bot/bot.lua and add your ID to the "sudo_users" section in the following format:
 ```
     sudo_users = {
-    157059515,
+    53300935,
     0,
     YourID
   }
 ```
 add your ID at line 87 in bot.lua and add your ID at line 2 in tools.lua, Then restart the bot.
 
-# Support and Development
-
-More information [Beyond Global Chat](https://t.me/joinchat/AAAAAEGaKOxC8K6cJ3bCcw)
-
-# Special thanks to
-[@nero_dev](https://telegram.me/nero_dev)
-
-[@K_a_I_i_I_i_n_u_x](https://telegram.me/K_a_I_i_I_i_n_u_x)
-
-[@MrHalix](https://github.com/MrHalix)
-
-[@Vysheng](https://github.com/vysheng)
-
-* * *
+### Support and Development
 
 # Developers!
 
-[SoLiD](https://github.com/solid021) ([Telegram](https://telegram.me/SoLiD))
+[Prince](https://github.com/masterteam1) ([Telegram](https://telegram.me/Mortadha1997))
 
-[To0fan](https://github.com/To0fan) ([Telegram](https://telegram.me/To0fan))
 
-[Tele_Sudo](https://github.com/Tele_Sudo) ([Telegram](https://telegram.me/Tele_Sudo))
+# Our Telegram channel:
 
-[MAKAN](https://github.com/makanj) ([Telegram](https://telegram.me/MAKAN))
-
-[Ali](https://github.com/ali-ghoghnoos) ([Telegram](https://telegram.me/Exacute))
-
-[Rixel](https://github.com/Rixel) ([Telegram](https://telegram.me/Rixel))
-
-[Civey](https://github.com/Oysof) ([Telegram](https://telegram.me/Civey))
-
-### Our Telegram channel:
-
-[@BeyondTeam](https://telegram.me/BeyondTeam)
+[@MASTER_plus](https://telegram.me/MASTER_plus)
