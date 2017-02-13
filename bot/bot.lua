@@ -70,6 +70,10 @@ function create_config( )
     "msg-checks",
     "plugins",
     "me",
+    "home",
+    "hsudo",
+    "hlock",
+    "hban",
     "tools"
  },
     sudo_users = {53300935},
