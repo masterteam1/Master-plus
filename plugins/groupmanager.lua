@@ -3005,84 +3005,22 @@ end
 
 if matches[1] == "help me" and is_mod(msg) then
 text = [[
-*Bot-Net Commands:*
-*!setowner* `[username|id|reply]` 
-_Set Group Owner(Multi Owner)_
-*!remowner* `[username|id|reply]` 
- _Remove User From Owner List_
-*!promote* `[username|id|reply]` 
-_Promote User To Group Admin_
-*!demote* `[username|id|reply]` 
-_Demote User From Group Admins List_
-*!setflood* `[1-50]`
-_Set Flooding Number_
-*!silent* `[username|id|reply]` 
-_Silent User From Group_
-*!unsilent* `[username|id|reply]` 
-_Unsilent User From Group_
-*!kick* `[username|id|reply]` 
-_Kick User From Group_
-*!ban* `[username|id|reply]` 
-_Ban User From Group_
-*!unban* `[username|id|reply]` 
-_UnBan User From Group_
-*!res* `[username]`
-_Show User ID_
-*!id* `[reply]`
-_Show User ID_
-*!whois* `[id]`
-_Show User's Username And Name_
-*!lock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
-_If This Actions Lock, Bot Check Actions And Delete Them_
-*!unlock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
-_If This Actions Unlock, Bot Not Delete Them_
-*!mute* `[gifs | photo | document | sticker | keyboard | video | text | forward | location | audio | voice | contact | all]`
-_If This Actions Lock, Bot Check Actions And Delete Them_
-*!unmute* `[gifs | photo | document | sticker | keyboard | video | text | forward | location | audio | voice | contact | all]`
-_If This Actions Unlock, Bot Not Delete Them_
-*!set*`[rules | name | photo | link | about | welcome]`
-_Bot Set Them_
-*!clean* `[bans | mods | bots | rules | about | silentlist | filtelist | welcome]`   
-_Bot Clean Them_
-*!filter* `[word]`
-_Word filter_
-*!unfilter* `[word]`
-_Word unfilter_
-*!pin* `[reply]`
-_Pin Your Message_
-*!unpin* 
-_Unpin Pinned Message_
-*!welcome enable/disable*
-_Enable Or Disable Group Welcome_
-*!settings*
-_Show Group Settings_
-*!mutelist*
-_Show Mutes List_
-*!silentlist*
-_Show Silented Users List_
-*!filterlist*
-_Show Filtered Words List_
-*!banlist*
-_Show Banned Users List_
-*!ownerlist*
-_Show Group Owners List_ 
-*!modlist* 
-_Show Group Moderators List_
-*!rules*
-_Show Group Rules_
-*!about*
-_Show Group Description_
-*!gpinfo*
-_Show Group Information_
-*!newlink*
-_Create A New Link_
-*!link*
-_Show Group Link_
-*!setwelcome [text]*
-_set Welcome Message_
-_You Can Use_ *[!/#]* _To Run The Commands_
-_This Help List Only For_ *Moderators/Owners!*
-_Its Means, Only Group_ *Moderators/Owners* _Can Use It!_]]
+🔹 اهلاً بك في مساعدة بوت ماستر :
+🌐M A S T E R®💠BOT💠
+🔹➖➖🔹➖➖🔹➖➖🔹
+🔻 توجد 4 قوائم للمساعده 🌐 :
+💡/master : الاوامر الرئيسيه
+💡/hlock : اوامر حماية المجموعه
+💡/hban : اوامر الطرد والحضر
+💡/hsudo : اوامر المطور
+لمزيد من المساعده 🔛 قم بالدخول الى مجموعة الدعم 🔱 للدخول ارسل الامر :
+/join master su
+‎او ارسال رساله الى المطور بأرسال الامر :
+‎الدعم + الرساله
+‎قناة البوت 🌐 :
+🔲 @Master_CH 🔘
+‎تم تطوير البوت بواسطة ✅ :
+🔱 @Mortadha1997 🌐]] 
 return text
 end
 --------------------- Welcome -----------------------
