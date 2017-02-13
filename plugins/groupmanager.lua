@@ -3003,7 +3003,7 @@ return "*تم وضع اللغة على : العربية*"
 end
 end
 
-if matches[1] == "help me" and is_mod(msg) then
+if matches[1] == "help" and is_mod(msg) then
 text = [[
 🔹 اهلاً بك في مساعدة بوت ماستر :
 🌐M A S T E R®💠BOT💠
@@ -3175,7 +3175,7 @@ patterns ={
 "^[!/#](setflood) (%d+)$",
 "^[!/#](res) (.*)$",
 "^[!/#](whois) (%d+)$",
-"^[!/#](help me)$",
+"^[!/#](help)$",
 "^[!/#](setlang) (.*)$",
 "^[#!/](filter) (.*)$",
 "^[#!/](unfilter) (.*)$",
