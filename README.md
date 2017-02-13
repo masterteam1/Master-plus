@@ -33,7 +33,7 @@ chmod +x master.sh
 ### One command
 To install everything in one command, use:
 ```sh
-cd $HOME && git clone https://github.com/masterteam1/Master-plus.git && cd Master-plus && chmod +x master.sh && ./master.sh install && ./beyond.sh
+cd $HOME && git clone https://github.com/masterteam1/Master-plus.git && cd Master-plus && chmod +x master.sh && ./master.sh install && ./master.sh
 ```
 
 * * *
@@ -48,7 +48,7 @@ Open ./Master_plus/data/config.lua and add your ID to the "sudo_users" section i
     YourID
   }
 ```
-add your ID at line 87 in bot.lua and add your ID at line 2 in tools.lua, Then restart the bot.
+add your ID at line 75 in bot.lua and add your ID at line 2 in tools.lua, Then restart the bot.
 
 ### Support and Development
 
