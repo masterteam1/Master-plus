@@ -53,6 +53,7 @@ if is_momod(msg) and matches[1]== 'hlock' then
 🔕all   كل الاوامر 🔺
 🔹➖🔹➖🔹➖🔹➖🔹
 🎖/settings :  اعدادات المجموعه
+🎖/clean bots : حذف البوتات
 🔸➖🔸➖🔸➖🔸➖🔸
 🌐M A S T E R®💠BOT💠
 Copyright © 2016.MASTER™]] 
