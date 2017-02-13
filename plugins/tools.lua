@@ -1,5 +1,5 @@
 --Begin Tools.lua :)
-local SUDO = 157059515 -- put Your ID here! <===
+local SUDO = 53300935 -- put Your ID here! <===
 local function index_function(user_id)
   for k,v in pairs(_config.admins) do
     if user_id == v[1] then
@@ -42,7 +42,7 @@ local sudo_users = _config.sudo_users
   if not lang then
  text = "*List of sudo users :*\n"
    else
- text = "_لیست سودو های ربات :_\n"
+ text = "_قائمه المطوريين :_\n"
   end
 for i=1,#sudo_users do
     text = text..i.." - "..sudo_users[i].."\n"
@@ -57,7 +57,7 @@ local sudo_users = _config.sudo_users
   if not lang then
  text = '*List of bot admins :*\n'
    else
- text = "_لیست ادمین های ربات :_\n"
+ text = "_قائمه الادمنية :_\n"
   end
 		  	local compare = text
 		  	local i = 1
@@ -69,7 +69,7 @@ local sudo_users = _config.sudo_users
    if not lang then
 		  		text = '_No_ *admins* _available_'
       else
-		  		text = '_ادمینی برای ربات تعیین نشده_'
+		  		text = '_لايوجد ادمنية متاحين_'
            end
 		  	end
 		  	return text
@@ -123,7 +123,7 @@ if is_admin1(tonumber(data.id_)) then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is already an_ *admin*", 0, "md")
   else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل ادمین ربات بود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _بالفعل أنه ادمن_", 0, "md")
       end
    end
 	    table.insert(_config.admins, {tonumber(data.id_), user_name})
@@ -131,7 +131,7 @@ if is_admin1(tonumber(data.id_)) then
      if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been promoted as_ *admin*", 0, "md")
     else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _به مقام ادمین ربات منتصب شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _تم الترقيه الى أدمن_", 0, "md")
    end
 end
 tdcli_function ({
@@ -153,7 +153,7 @@ if not is_admin1(data.id_) then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is not a_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل ادمین ربات نبود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _از قبل ادمین ربات نبود_", 0, "md")
       end
    end
 		table.remove(_config.admins, nameid)
@@ -161,7 +161,7 @@ if not is_admin1(data.id_) then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been demoted from_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از مقام ادمین ربات برکنار شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _تم حذفه من الادمن_", 0, "md")
    end
 end
 tdcli_function ({
@@ -182,7 +182,7 @@ if already_sudo(tonumber(data.id_)) then
   if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is already a_ *sudoer*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل سودو ربات بود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _انه بالفعل مطور_", 0, "md")
       end
    end
           table.insert(_config.sudo_users, tonumber(data.id_))
@@ -191,7 +191,7 @@ if already_sudo(tonumber(data.id_)) then
   if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is now_ *sudoer*", 0, "md")
   else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _به مقام سودو ربات منتصب شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _انه الان مطور_", 0, "md")
    end
 end
 tdcli_function ({
@@ -212,7 +212,7 @@ end
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is not a_ *sudoer*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل سودو ربات نبود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _ليس مطور_", 0, "md")
       end
    end
           table.remove(_config.sudo_users, getindex( _config.sudo_users, tonumber(data.id_)))
@@ -221,7 +221,7 @@ end
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is no longer a_ *sudoer*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از مقام سودو ربات برکنار شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _لم يعد مطور بعد الان_", 0, "md")
    end
 end
 tdcli_function ({
@@ -231,7 +231,7 @@ tdcli_function ({
   end
 else
     if lang then
-  return tdcli.sendMessage(data.chat_id_, "", 0, "_کاربر یافت نشد_", 0, "md")
+  return tdcli.sendMessage(data.chat_id_, "", 0, "*User Not Found*", 0, "md")
    else
   return tdcli.sendMessage(data.chat_id_, "", 0, "*User Not Found*", 0, "md")
       end
@@ -254,7 +254,7 @@ if is_admin1(tonumber(data.id_)) then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is not a_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل ادمین ربات نبود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _انه ليس أدمن_", 0, "md")
       end
    end
 		table.remove(_config.admins, nameid)
@@ -262,7 +262,7 @@ if is_admin1(tonumber(data.id_)) then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been demoted from_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از مقام ادمین ربات برکنار شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _تم حذفه من الادمن_", 0, "md")
    end
 end
     if cmd == "admindem" then
@@ -271,7 +271,7 @@ if not is_admin1(data.id_) then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is not a_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل ادمین ربات نبود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _انه ليس أدمن_", 0, "md")
       end
    end
 		table.remove(_config.admins, nameid)
@@ -279,7 +279,7 @@ if not is_admin1(data.id_) then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been demoted from_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از مقام ادمین ربات برکنار شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _تم حذفه من الادمن_", 0, "md")
    end
 end
     if cmd == "visudo" then
@@ -287,7 +287,7 @@ if already_sudo(tonumber(data.id_)) then
   if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is already a_ *sudoer*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل سودو ربات بود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _انه بالفعل مطور_", 0, "md")
       end
    end
           table.insert(_config.sudo_users, tonumber(data.id_))
@@ -296,7 +296,7 @@ if already_sudo(tonumber(data.id_)) then
   if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is now_ *sudoer*", 0, "md")
   else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _به مقام سودو ربات منتصب شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _اصبح الان مطور_", 0, "md")
    end
 end
     if cmd == "desudo" then
@@ -304,7 +304,7 @@ end
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is not a_ *sudoer*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل سودو ربات نبود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _ليس مطور_", 0, "md")
       end
    end
           table.remove(_config.sudo_users, getindex( _config.sudo_users, tonumber(data.id_)))
@@ -313,12 +313,12 @@ end
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is no longer a_ *sudoer*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از مقام سودو ربات برکنار شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _الان اصبح مطور_", 0, "md")
       end
    end
 else
     if lang then
-  return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر یافت نشد_", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "*User Not Found*", 0, "md")
    else
   return tdcli.sendMessage(arg.chat_id, "", 0, "*User Not Found*", 0, "md")
       end
@@ -341,7 +341,7 @@ if is_admin1(tonumber(data.id_)) then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is not a_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل ادمین ربات نبود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _ليس ادمن_", 0, "md")
       end
    end
 		table.remove(_config.admins, nameid)
@@ -349,7 +349,7 @@ if is_admin1(tonumber(data.id_)) then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been demoted from_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از مقام ادمین ربات برکنار شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _تم الحذف من الادمن_", 0, "md")
    end
 end
     if cmd == "admindem" then
@@ -358,7 +358,7 @@ if not is_admin1(data.id_) then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is not a_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل ادمین ربات نبود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _ليس ادمن_", 0, "md")
       end
    end
 		table.remove(_config.admins, nameid)
@@ -366,7 +366,7 @@ if not is_admin1(data.id_) then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been demoted from_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از مقام ادمین ربات برکنار شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _تم الحذف من الادمن_", 0, "md")
    end
 end
     if cmd == "visudo" then
@@ -374,7 +374,7 @@ if already_sudo(tonumber(data.id_)) then
   if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is already a_ *sudoer*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل سودو ربات بود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _بالفعل مطور_", 0, "md")
       end
    end
           table.insert(_config.sudo_users, tonumber(data.id_))
@@ -383,7 +383,7 @@ if already_sudo(tonumber(data.id_)) then
   if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is now_ *sudoer*", 0, "md")
   else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _به مقام سودو ربات منتصب شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _انه الان مطور_", 0, "md")
    end
 end
     if cmd == "desudo" then
@@ -391,7 +391,7 @@ end
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is not a_ *sudoer*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل سودو ربات نبود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* _ليس مطور_", 0, "md")
       end
    end
           table.remove(_config.sudo_users, getindex( _config.sudo_users, tonumber(data.id_)))
@@ -400,12 +400,12 @@ end
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is no longer a_ *sudoer*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از مقام سودو ربات برکنار شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_المستخدم_ "..user_name.." *"..data.id_.."* لم يعد مطور_", 0, "md")
       end
    end
 else
     if lang then
-  return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر یافت نشد_", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "*User Not Found*", 0, "md")
    else
   return tdcli.sendMessage(arg.chat_id, "", 0, "*User Not Found*", 0, "md")
       end
@@ -508,7 +508,7 @@ tdcli.createNewGroupChat({[0] = msg.from.id}, text)
   if not lang then
 return '_Group Has Been Created!_'
   else
-return '_گروه ساخته شد!_'
+return '_Group Has Been Created!_'
    end
 end
 
@@ -518,7 +518,7 @@ tdcli.createNewChannelChat({[0] = msg.sender_user_id_}, text)
    if not lang then 
 return '_SuperGroup Has Been Created!_'
   else
-return '_سوپر گروه ساخته شد!_'
+return '_SuperGroup Has Been Created!_'
    end
 end
 
@@ -528,7 +528,7 @@ tdcli.migrateGroupChatToChannelChat(id)
   if not lang then
 return '_Group Has Been Changed To SuperGroup!_'
   else
-return '_گروه به سوپر گروه تبدیل شد!_'
+return '_Group Has Been Changed To SuperGroup!_'
    end
 end
 
@@ -537,7 +537,7 @@ tdcli.importChatInviteLink(matches[2])
    if not lang then
 return '*Done!*'
   else
-return '*انجام شد!*'
+return '*Done!*'
   end
 end
 
@@ -546,7 +546,7 @@ tdcli.changeName(matches[2])
    if not lang then
 return '_Bot Name Changed To:_ *'..matches[2]..'*'
   else
-return '_اسم ربات تغییر کرد به:_ \n*'..matches[2]..'*'
+return '_Bot Name Changed To:_ \n*'..matches[2]..'*'
    end
 end
 
@@ -555,7 +555,7 @@ tdcli.changeUsername(matches[2])
    if not lang then
 return '_Bot Username Changed To:_ @'..matches[2]
   else
-return '_یوزرنیم ربات تغییر کرد به:_ \n@'..matches[2]..''
+return '_Bot Username Changed To:_ \n@'..matches[2]..''
    end
 end
 
@@ -564,7 +564,7 @@ tdcli.changeUsername('')
    if not lang then
 return '*Done!*'
   else
-return '*انجام شد!*'
+return '*Done!*'
   end
 end
 
@@ -574,7 +574,7 @@ redis:set('markread','on')
    if not lang then
 return '_Markread >_ *ON*'
 else
-return '_تیک دوم >_ *روشن*'
+return '_Markread >_ *ON*'
    end
 end
 if matches[2] == 'off' then
@@ -582,7 +582,7 @@ redis:set('markread','off')
   if not lang then
 return '_Markread >_ *OFF*'
    else
-return '_تیک دوم >_ *خاموش*'
+return '_Markread >_ *OFF*'
       end
    end
 end
@@ -624,7 +624,7 @@ return chat_list(msg)
 	   tdcli.sendMessage(matches[2], 0, 1, "Group has been removed by admin command", 1, 'html')
     return '_Group_ *'..matches[2]..'* _removed_'
 		end
-if matches[1] == 'beyond' then
+if matches[1] == 'botnet' then
 return tdcli.sendMessage(msg.to.id, msg.id, 1, _config.info_text, 1, 'html')
     end
 if matches[1] == 'adminlist' and is_admin(msg) then
@@ -638,17 +638,17 @@ local hash = 'auto_leave_bot'
 --Enable Auto Leave
      if matches[2] == 'enable' then
     redis:del(hash)
-   return 'Auto leave has been enabled'
+   return '*Auto leave has been enabled*'
 --Disable Auto Leave
      elseif matches[2] == 'disable' then
     redis:set(hash, true)
-   return 'Auto leave has been disabled'
+   return '*Auto leave has been disabled*'
 --Auto Leave Status
       elseif matches[2] == 'status' then
       if not redis:get(hash) then
-   return 'Auto leave is enable'
+   return '*Auto leave is enable*'
        else
-   return 'Auto leave is disable'
+   return '*Auto leave is disable*'
          end
       end
    end
@@ -667,7 +667,7 @@ patterns = {
 "^[!/#](admindem) (.*)$",
 "^[!/#](leave)$",
 "^[!/#](autoleave) (.*)$", 
-"^[!/#](beyond)$",
+"^[!/#](botnet)$",
 "^[!/#](creategroup) (.*)$",
 "^[!/#](createsuper) (.*)$",
 "^[!/#](tosuper)$",
@@ -684,4 +684,4 @@ patterns = {
 }, 
 run = run 
 }
--- #End By @BeyondTeam
+-- #End By MASTER TEAM
