@@ -40,7 +40,7 @@ cd $HOME && git clone https://github.com/masterteam1/Master-plus.git && cd Maste
 
 ### Sudo
 
-Open ./bot/bot.lua and add your ID to the "sudo_users" section in the following format:
+Open ./Master_plus/data/config.lua and add your ID to the "sudo_users" section in the following format:
 ```
     sudo_users = {
     53300935,
